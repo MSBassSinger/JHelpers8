@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Jeff.Jones.JHelpers8</RootNamespace>
+		<PackageVersion>0.0.0</PackageVersion>
+		<ApplicationIcon>circlej.ico</ApplicationIcon>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageId>Jeff.Jones.JHelpers8</PackageId>
+		<Title>.NET Helper functions, classes, and extensions</Title>
+		<Authors>Jeff Jones</Authors>
+		<Company>Jeff Jones</Company>
+		<Copyright>Copyright © 2024 Jeff Jones.  All Rights Reserved.</Copyright>
+		<PackageLicenseFile>License.txt</PackageLicenseFile>
+		<PackageReleaseNotes>This project has been made open source, and updated to .NET 8.</PackageReleaseNotes>
+		<PackageTags>helpers .NET extensions extensions geo</PackageTags>
+		<Description>A static library of helper functions, extensions, and classes.  You are bound to find something useful.  Built for .NET 8</Description>
+		<SignAssembly>False</SignAssembly>
+		<AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+		<Version>8.0.0</Version>
+		<DelaySign>false</DelaySign>
+		<RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+		<PackageProjectUrl>https://github.com/MSBassSinger/JHelpers8</PackageProjectUrl>
+		<AssemblyVersion>8.0.0.0</AssemblyVersion>
+		<FileVersion>8.0.0.0</FileVersion>
+		<PackageIcon>circlej.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<BaseOutputPath>bin\</BaseOutputPath>
+		<BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+		<RepositoryUrl>https://github.com/MSBassSinger/JHelpers8</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>C:\Projects\JHelpers8\JHelpers8\JHelpers8.xml</DocumentationFile>
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="circlej.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="License.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+		<PackageReference Include="System.Diagnostics.PerformanceCounter" Version="8.0.0" />
+		<PackageReference Include="System.DirectoryServices" Version="8.0.0" />
+		<PackageReference Include="System.Management" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="circlej.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>

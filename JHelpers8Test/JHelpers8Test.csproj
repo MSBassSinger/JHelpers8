@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <Description>This is the test project for JHelpers.</Description>
+
+    <Copyright>Copyright 2024 Jeff Jones.</Copyright>
+
+    <PackageProjectUrl>https://github.com/MSBassSinger/JHelpers8_Demo</PackageProjectUrl>
+
+    <ApplicationIcon>circlej.ico</ApplicationIcon>
+
+    <BaseOutputPath>bin\</BaseOutputPath>
+
+    <Nullable>disable</Nullable>
+
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+
+    <FileVersion>8.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="circlej.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JHelpers8\JHelpers8.csproj" />
+  </ItemGroup>
+
+</Project>
