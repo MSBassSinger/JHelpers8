@@ -3314,7 +3314,7 @@ namespace Jeff.Jones.JHelpers8
                 {
                     retVal = false;
                 }
-                else if (emailAddress.Contains(' '))  // email address cannnot have a space.
+                else if (emailAddress.Contains(' '))  // email address can not have a space.
                 {
                     retVal = false;
                 }

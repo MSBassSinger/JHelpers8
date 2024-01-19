@@ -14,7 +14,7 @@ Code for JHelpers8 is found at:
 https://github.com/MSBassSinger/JHelpers8
 
 Code examples are available in the sample application found at:
-https://github.com/MSBassSinger/JHelpers_Demo6
+https://github.com/MSBassSinger/JHelpers_Demo8
 
 NuGet package is found at:
 https://www.nuget.org/packages/Jeff.Jones.JHelpers8
@@ -45,5 +45,5 @@ CommonHelpers
 -------------
 
 This is a static class with a number of useful static methods and extension methods.
-The JHelpers_Demo6 demo project shows the usage.
+The JHelpers_Demo8 demo project shows the usage.
 
