@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<RootNamespace>Jeff.Jones.JHelpers8</RootNamespace>
-		<PackageVersion>0.0.0</PackageVersion>
+		<PackageVersion>8.0.0</PackageVersion>
 		<ApplicationIcon>circlej.ico</ApplicationIcon>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
